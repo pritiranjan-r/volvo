@@ -8,7 +8,7 @@ export default async function Learn({
   params: { volvoId: string };
 }) {
   const { volvoId } = params;
-  const API = await fetch("http://localhost:3001/api/cars.json");
+  const API = await fetch("http://localhost:3000/api/cars.json");
 
   if (!API.ok) {
     throw new Error(`HTTP error! Status`);
